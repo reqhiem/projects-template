@@ -1,0 +1,14 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
+export default {
+  MONGO_URI: process.env.MONGO_URI || 'undefined',
+  MONGO_HOST: process.env.MONGO_HOST || 'localhost',
+  MONGO_PORT: process.env.MONGO_PORT || '27017',
+  MONGO_DATABASE: process.env.MONGO_DATABASE || 'database_name',
+  MONGO_USER: process.env.MONGO_USER || 'admin',
+  MONGO_PASSWORD: process.env.MONGO_PASSWORD || 'admin',
+  SERVER_PORT: process.env.SERVER_PORT || 8000,
+  JWT_SECRET: process.env.JWT_SECRET || 'jwtSecretKey',
+  JWT_LIFETIME: process.env.JWT_LIFETIME || '30d',
+};
